@@ -16,12 +16,10 @@
       "type": "string"
     },
     "summary": {
-      "type": "text",
-      "maxLength": 80
+      "type": "text"
     },
     "content": {
-      "type": "text",
-      "maxLength": 500
+      "type": "text"
     },
     "slug": {
       "type": "uid",
