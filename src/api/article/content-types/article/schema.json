@@ -15,19 +15,20 @@
     "title": {
       "type": "string"
     },
-    "description": {
+    "summary": {
       "type": "text",
       "maxLength": 80
+    },
+    "content": {
+      "type": "text",
+      "maxLength": 500
     },
     "slug": {
       "type": "uid",
       "targetField": "title"
     },
-    "cover": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+    "img": {
+     "type": "string"
     },
     "author": {
       "type": "relation",
@@ -40,10 +41,6 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "articles"
-    },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
     }
   }
 }
