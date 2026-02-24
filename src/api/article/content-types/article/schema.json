@@ -17,11 +17,10 @@
     },
     "summary": {
       "type": "text",
-      "maxLength": 80
+      "maxLength": 200
     },
     "content": {
-      "type": "text",
-      "maxLength": 500
+      "type": "text"
     },
     "slug": {
       "type": "uid",
